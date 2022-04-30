@@ -35,7 +35,7 @@ objElm.addEventListener('click', () => {
   }
 });
 
-const cappuccino = [
+const layers = [
   {
     color: '#feeeca',
     label: 'Mléčná pěna',
@@ -51,6 +51,11 @@ const cappuccino = [
 ];
 
 const drinkInfoElm = document.querySelector('.drink__info');
-drinkInfoElm.innerHTML += Layer({ color: '#feeeca', label: 'Mléčná pěna' });
-drinkInfoElm.innerHTML += Layer({ color: '#fed7b0', label: 'Teplé mléko' });
-drinkInfoElm.innerHTML += Layer({ color: '#613916', label: 'Espresso' });
+
+// drinkInfoElm.innerHTML += Layer({ color: '#feeeca', label: 'Mléčná pěna' });
+// drinkInfoElm.innerHTML += Layer({ color: '#fed7b0', label: 'Teplé mléko' });
+// drinkInfoElm.innerHTML += Layer({ color: '#613916', label: 'Espresso' });
+
+layers.forEach((item) => {
+  drinkInfoElm.innerHTML += Layer(item);
+});
