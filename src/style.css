@@ -244,16 +244,17 @@ nav a:hover {
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery p {
   background-color: #444;
   opacity: 0.9;
-  font-size: 28px;
+  font-size: 2rem;
   text-align: center;
   padding: 40px 20px;
-  position: relative;
-  top: 35vh;
 }
 
 .contacts {
@@ -318,10 +319,6 @@ nav a:hover {
     padding-top: 4rem;
 
     text-align: center;
-  }
-
-  .gallery p {
-    font-size: 36px;
   }
 
   .drink {
