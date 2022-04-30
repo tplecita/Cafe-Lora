@@ -11,9 +11,7 @@ html {
 
 body {
   margin: 0;
-
   background-image: url('./img/spots.png');
-
   color: white;
 }
 
@@ -31,7 +29,6 @@ section {
 h1,
 h2 {
   margin-bottom: 1rem;
-
   font-family: 'Great Vibes', fantasy;
   font-weight: 400;
   font-size: 3rem;
@@ -48,7 +45,6 @@ h3 {
 header {
   padding: 1rem 0 1rem 0;
   height: 5rem;
-
   background-color: #301a1a;
 }
 
@@ -60,7 +56,6 @@ header {
 .site-logo {
   width: 180px;
   height: 50px;
-
   background-image: url('./img/site-logo.png');
   background-size: contain;
 }
@@ -74,18 +69,14 @@ header {
 nav {
   width: 10rem;
   padding: 1rem;
-
   background-color: #301a1a;
 }
 
 nav a {
   display: block;
-
   margin: 1rem;
-
   color: #ddd;
   border-bottom: 1px solid transparent;
-
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -103,7 +94,6 @@ nav a:hover {
   height: 3rem;
   padding: 0;
   border: none;
-
   background-color: transparent;
   background-image: url('./img/menu.png');
   background-size: contain;
@@ -117,7 +107,6 @@ nav a:hover {
 
 .banner {
   padding-top: 0;
-
   background-image: url('./img/beans.jpg');
   background-size: cover;
   background-position: top center;
@@ -126,7 +115,6 @@ nav a:hover {
 .intro {
   padding-top: 30rem;
   padding-bottom: 3rem;
-
   text-align: center;
 }
 
@@ -140,35 +128,9 @@ nav a:hover {
   text-align: center;
 }
 
-.order-btn {
-  padding: 0.5rem 1rem;
-
-  color: white;
-  background-color: #ea946f;
-  border: none;
-  box-shadow: 0 0 5px #444;
-  border-radius: 1rem;
-
-  transition: 300ms;
-  cursor: pointer;
-}
-
-.order-btn:hover {
-  transform: scale(1.1);
-}
-
-.order-btn:focus {
-  outline: none;
-}
-
-.order-btn:active {
-  background-color: #e67e51;
-}
-
 .gallery {
   padding-top: 0;
   min-height: 100vh;
-
   color: white;
   background-image: url('./img/gallery.jpg');
   background-size: cover;
@@ -189,7 +151,6 @@ nav a:hover {
 
 .contacts {
   margin-bottom: 4rem;
-
   text-align: center;
 }
 
@@ -202,12 +163,6 @@ nav a:hover {
   height: auto;
 }
 
-@media (min-width: 576px) {
-  .drink {
-    width: 50%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 960px;
@@ -215,7 +170,6 @@ nav a:hover {
 
   .banner {
     height: 600px;
-
     background-position: top left;
   }
 
@@ -229,7 +183,6 @@ nav a:hover {
 
   nav a {
     display: inline-block;
-
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
@@ -244,14 +197,8 @@ nav a:hover {
 
   .intro {
     width: 30%;
-
     margin-left: 65%;
     padding-top: 4rem;
-
     text-align: center;
-  }
-
-  .drink {
-    width: 33.333%;
   }
 }

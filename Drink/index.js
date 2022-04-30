@@ -9,9 +9,7 @@ export const Drink = (props) => {
   drinkElm.innerHTML = `
 <div class="drink__product">
   <div class="drink__cup">
-    <img
-      src="${image}"
-    />
+    <img src="${image}"/>
   </div>
   <div class="drink__info">
     <h3>${name}</h3>

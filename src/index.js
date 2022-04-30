@@ -80,24 +80,12 @@ const drinks = [
   },
 ];
 
-const drink = {
-  id: 'romano',
-  name: 'Romano',
-  ordered: false,
-  layers: [
-    {
-      color: '#fbdf5b',
-      label: 'citrón',
-    },
-    {
-      color: '#613916',
-      label: 'espresso',
-    },
-  ],
-  image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png',
-};
-
-const drinksListElm = document.querySelector('.drinks-list');
-drinks.forEach((item) => {
-  drinksListElm.appendChild(Drink(item));
-});
+fetch('https://apps.kodim.cz/daweb/cafelora/api/drinks')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    data.results.forEach((item) =>
+      document.querySelector('.drinks-list').appendChild(Drink(item)),
+    );
+  });
