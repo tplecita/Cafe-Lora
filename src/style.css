@@ -246,6 +246,16 @@ nav a:hover {
   background-attachment: fixed;
 }
 
+.gallery p {
+  background-color: #444;
+  opacity: 0.9;
+  font-size: 28px;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  top: 35vh;
+}
+
 .contacts {
   margin-bottom: 4rem;
 
@@ -308,6 +318,10 @@ nav a:hover {
     padding-top: 4rem;
 
     text-align: center;
+  }
+
+  .gallery p {
+    font-size: 36px;
   }
 
   .drink {
