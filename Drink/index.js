@@ -26,5 +26,22 @@ export const Drink = (props) => {
   layers.forEach((item) => {
     layerElm.innerHTML += Layer(item);
   });
+  const objElm = drinkElm.querySelector('.order-btn');
+
+  let order = ordered;
+
+  objElm.addEventListener('click', () => {
+    const objednavka = drinkElm.querySelector('.drink__cup');
+    if (!order) {
+      objElm.textContent = 'Zrušit';
+      objednavka.classList.add('drink__cup--selected');
+      order = true;
+    } else {
+      objElm.textContent = 'Objednat';
+      objednavka.classList.remove('drink__cup--selected');
+      order = false;
+    }
+  });
+
   return drinkElm;
 };
